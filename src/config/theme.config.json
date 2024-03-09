@@ -1,0 +1,23 @@
+{
+  "default": "light",
+  "theme_settings": [
+    {
+      "light": {
+        "base-100": "#ffffff",
+        "base-200": "#e6e6e6",
+        "base-300": "#cccccc",
+        "accent": "#ffa31a",
+        "base-content": "#000000"
+      }
+    },
+    {
+      "dark": {
+        "base-100": "#1b1b1b",
+        "base-200": "#292929",
+        "base-300": "#808080",
+        "accent": "#ffa31a",
+        "base-content": "#ffffff"
+      }
+    }
+  ]
+}
