@@ -7,7 +7,10 @@
         "base-200": "#e6e6e6",
         "base-300": "#cccccc",
         "accent": "#ffa31a",
-        "base-content": "#000000"
+        "base-content": "#000000",
+        "success": "#50C878",
+        "error": "#EE4B2B",
+        "info": "#0096FF"
       }
     },
     {
@@ -16,7 +19,10 @@
         "base-200": "#292929",
         "base-300": "#808080",
         "accent": "#ffa31a",
-        "base-content": "#ffffff"
+        "base-content": "#ffffff",
+        "success": "#50C878",
+        "error": "#EE4B2B",
+        "info": "#0096FF"
       }
     }
   ]

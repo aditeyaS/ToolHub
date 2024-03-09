@@ -26,12 +26,12 @@ const Header = () => {
     }
   };
   return (
-    <div className="navbar bg-base-300 text-base-content px-5">
+    <div className="navbar bg-base-100 text-base-content px-5">
       <div className="navbar-start gap-2">
         <SunSvg />
         <input
           type="checkbox"
-          className="toggle"
+          className="toggle toggle-accent"
           checked={darkTheme}
           onChange={onThemeChange}
         />

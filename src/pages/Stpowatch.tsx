@@ -3,6 +3,7 @@ import ResetSvg from "../components/svg/ResetSvg";
 import PauseSvg from "../components/svg/PauseSvg";
 import PlayResumeSvg from "../components/svg/PlayResumeSvg";
 import { clearInterval, setInterval } from "worker-timers";
+import { Link } from "react-router-dom";
 
 type StopwatchModel = {
   hr: number;
@@ -60,6 +61,14 @@ const Stopwatch = () => {
 
   return (
     <div className="flex flex-col gap-10 items-center">
+      <div className="text-sm breadcrumbs">
+        <ul>
+          <li>
+            <Link to="/tools">Tools</Link>
+          </li>
+          <li>Stopwatch</li>
+        </ul>
+      </div>
       <span className="text-accent text-9xl">{`${time.hr < 10 ? 0 : ""}${time.hr} : ${time.min < 10 ? 0 : ""}${time.min} : ${time.sec < 10 ? 0 : ""}${time.sec}`}</span>
       <div className="flex gap-2">
         <button

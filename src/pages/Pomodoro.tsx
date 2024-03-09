@@ -3,6 +3,7 @@ import ResetSvg from "../components/svg/ResetSvg";
 import PlayResumeSvg from "../components/svg/PlayResumeSvg";
 import { clearInterval, setInterval } from "worker-timers";
 import notificationSound from "../assets/notification.mp3";
+import { Link } from "react-router-dom";
 
 type TimerModel = {
   sec: number;
@@ -97,6 +98,14 @@ const Pomodoro = () => {
 
   return (
     <div className="flex flex-col gap-10 items-center">
+      <div className="text-sm breadcrumbs">
+        <ul>
+          <li>
+            <Link to="/tools">Tools</Link>
+          </li>
+          <li>Pomodoro</li>
+        </ul>
+      </div>
       {isFocused ? (
         <progress
           className="progress progress-success w-96 h-10"
@@ -126,6 +135,7 @@ const Pomodoro = () => {
           <span>Click to start</span>
         )}
       </div>
+
       <div className="flex gap-2">
         {isTimerRunning ? (
           <button className="btn btn-circle btn-error" onClick={onReset}>
@@ -140,8 +150,7 @@ const Pomodoro = () => {
       <div className="flex gap-2">
         <label className="form-control w-full max-w-xs">
           <div className="label">
-            <span className="label-text">Focus</span>
-            <span className="label-text-alt">{`(minutes)`}</span>
+            <span className="label-text">{`Focus time (minutes)`}</span>
           </div>
           <input
             type="number"
@@ -155,8 +164,7 @@ const Pomodoro = () => {
         </label>
         <label className="form-control w-full max-w-xs">
           <div className="label">
-            <span className="label-text">Focus</span>
-            <span className="label-text-alt">{`(minutes)`}</span>
+            <span className="label-text">{`Rest time (minutes)`}</span>
           </div>
           <input
             type="number"

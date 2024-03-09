@@ -9,18 +9,17 @@ const PauseSvg = () => {
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
-        {" "}
         <path
           d="M8 5V19M16 5V19"
           stroke="#000000"
           strokeWidth="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>{" "}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>
       </g>
     </svg>
   );
