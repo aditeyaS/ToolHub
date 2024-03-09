@@ -12,8 +12,8 @@ const initialTimer: TimerModel = {
   sec: 0,
 };
 
-const INITIAL_FOCUS = 1;
-const INITIAL_REST = 1;
+const INITIAL_FOCUS = 25;
+const INITIAL_REST = 5;
 
 const Pomodoro = () => {
   const sound = new Audio(notificationSound);
