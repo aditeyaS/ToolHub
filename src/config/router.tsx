@@ -5,6 +5,7 @@ import ToolList from "../pages/ToolList";
 import Error from "../pages/Error";
 import Stopwatch from "../pages/Stpowatch";
 import Pomodoro from "../pages/Pomodoro";
+import ColorVisualizer from "../pages/ColorVisualizer";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
           { path: "", element: <ToolList /> },
           { path: "stopwatch", element: <Stopwatch /> },
           { path: "pomodoro", element: <Pomodoro /> },
+          { path: "colorVisualizer", element: <ColorVisualizer /> },
         ],
       },
       { path: "*", element: <Error /> },

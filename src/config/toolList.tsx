@@ -13,6 +13,10 @@ const toolList: ToolListModel[] = [
     name: "Pomodoro",
     url: "pomodoro",
   },
+  {
+    name: "Color Visualizer",
+    url: "colorVisualizer",
+  },
 ];
 
 export default toolList;
